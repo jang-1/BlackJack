@@ -1,14 +1,14 @@
-import { Hand } from './Hand.js'
+import { Hand } from "./Hand.js";
 export class Player {
-    constructor(name){
-        this.name = name;
-        this.points = 0;
-        this.hand = new Hand();
-    }
+  constructor(name) {
+    this.name = name;
+    this.points = 0;
+    this.hand = new Hand();
+  }
 
-    calculatePoints(){
-        this.points = this.hand.getStrength();
+  calculatePoints() {
+    this.points = this.hand.getStrength();
 
-        return this.points;
-    }
+    return this.points;
+  }
 }
